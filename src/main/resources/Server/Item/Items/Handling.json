@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.Hendling.name"
+  },
+  "MaxStack": 100,
+  "Categories": [
+    "Blocks.Decoration"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Handling/han.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/texture.png"
+      }
+    ],
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Turen_Off",
+              "Turen_On": "Turen_Off",
+              "Turen_Off": "Turen_On"
+            },
+            "UpdateBlockState": false
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "Turen_On": {
+          "DrawType": "Model",
+          "IsDoor": false,
+          "AllowsMultipleUsers": true,
+          "CustomModelAnimation": "Blocks/anim/Climb_Left.blockyanim"
+        },
+        "Turen_Off": {
+          "DrawType": "Model",
+          "CustomModelAnimation": "Blocks/amim/Handling/animation.blockyanim",
+          "CustomModelTexture": [
+            {
+              "Texture": "BlockTextures/texture.png"
+            }
+          ],
+          "IsDoor": false,
+          "AllowsMultipleUsers": true
+        }
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 1.4,
+    "Rotation": [
+      22.5,
+      48,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Hen.png"
+}

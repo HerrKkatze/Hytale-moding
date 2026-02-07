@@ -15,5 +15,6 @@
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false,
+  "IncludesAssetPack": true,
   "Main": "dev.hytalemodding.ExamplePlugin"
 }
