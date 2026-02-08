@@ -27,6 +27,21 @@
     </dependencies>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <!-- Указываем каталог, в который будет помещен jar-файл -->
+                    <outputDirectory>/home/gin/.var/app/com.hypixel.HytaleLauncher/data/Hytale/UserData/Mods</outputDirectory>
+                    <!-- Указываем имя jar-файла (без расширения .jar) -->
+                    <finalName>my-artifact</finalName>
+                    <!-- Можно также указать, что нужно использовать классификатор (classifier) -->
+                    <!-- <classifier>sources</classifier> -->
+                </configuration>
+            </plugin>
+        </plugins>
     <resources>
         <resource>
             <directory>src/main/resources</directory>

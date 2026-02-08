@@ -16,16 +16,10 @@
       }
     ],
     "Interactions": {
-      "Use": {
+      "Secondary": {
         "Interactions": [
           {
-            "Type": "ChangeState",
-            "Changes": {
-              "default": "Turen_Off",
-              "Turen_On": "Turen_Off",
-              "Turen_Off": "Turen_On"
-            },
-            "UpdateBlockState": false
+            "Type": "my_custom_interaction_id"
           }
         ]
       }
@@ -50,7 +44,8 @@
           "AllowsMultipleUsers": true
         }
       }
-    }
+    },
+    "VariantRotation": "NESW"
   },
   "IconProperties": {
     "Scale": 1.4,
