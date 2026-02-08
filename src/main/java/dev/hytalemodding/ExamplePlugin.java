@@ -27,19 +27,15 @@ public class ExamplePlugin extends JavaPlugin {
     protected void setup() {
         this.getCommandRegistry().registerCommand(new command());
         this.getCommandRegistry().registerCommand(new ExampleCommand("example", "An example command"));
+
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, ExampleEvent::onPlayerReady);
 
         this.getEntityStoreRegistry().registerSystem (new MyCustomInteraction());
-
-
         this.getEntityStoreRegistry().registerSystem(new MyItemShuffleSystem());
-
 
         this.getEventRegistry().registerGlobal(
                 PlayerChatEvent.class,
                 commandsUser::onPlayerChat
         );
-
-
     }
 }

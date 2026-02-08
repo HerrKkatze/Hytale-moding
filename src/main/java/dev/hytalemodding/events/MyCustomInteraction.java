@@ -9,14 +9,10 @@ import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.ecs.PlaceBlockEvent;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
-import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 
 public class MyCustomInteraction extends EntityEventSystem<EntityStore, PlaceBlockEvent> {
-
 
     public MyCustomInteraction() {
         super(PlaceBlockEvent.class);
@@ -36,7 +32,6 @@ public class MyCustomInteraction extends EntityEventSystem<EntityStore, PlaceBlo
 
 
     }
-
 
     @Override
     public Query<EntityStore> getQuery() {
